@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beyond2lte.mk
+    $(LOCAL_DIR)/aosp_beyondx.mk
