@@ -15,13 +15,13 @@
 
 ### INHERIT FROM YOSHIRO
 include device/samsung/exynos9820-common/BoardConfigPlatform.mk
-include vendor/samsung/beyond2lte/BoardConfigVendor.mk
+include vendor/samsung/beyondx/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/beyond2lte
+DEVICE_PATH := device/samsung/beyondx
 
 PRODUCT_PLATFORM := exynos9820
 
-TARGET_OTA_ASSERT_DEVICE := beyond2,beyond2lte,beyond2ltexx
+TARGET_OTA_ASSERT_DEVICE := beyondx,beyondxx,beyondxxx
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/hardware/include
 
@@ -29,9 +29,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/device_manifest.xml
 
 ### KERNEL
 ifeq ($(WITH_MAGISK),true)
-  TARGET_KERNEL_CONFIG := exynos9820-beyond2lte_magisk_defconfig
+  TARGET_KERNEL_CONFIG := exynos9820-beyondx_magisk_defconfig
 else
-  TARGET_KERNEL_CONFIG := exynos9820-beyond2lte_defconfig
+  TARGET_KERNEL_CONFIG := exynos9820-beyondx_defconfig
 endif
 
 ### PARTITIONS
