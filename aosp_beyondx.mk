@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/beyond2lte/device.mk)
+$(call inherit-product, device/samsung/beyondx/device.mk)
 
 ### BOOTANIMATION
 # vendor/lineage/config/common_full_phone.mk
@@ -18,20 +18,20 @@ TARGET_BOOTANIMATION_HALF_RES := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_beyond2lte
-PRODUCT_DEVICE := beyond2lte
+PRODUCT_NAME := aosp_beyondx
+PRODUCT_DEVICE := beyondx
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G975F
+PRODUCT_MODEL := SM-G977B
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_PDA_VERSION := G975FXXU4CTC9
+PRODUCT_PDA_VERSION := G977BXXS8FUF3
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=beyond2ltexx \
-    PRODUCT_DEVICE=beyond2 \
-    PRIVATE_BUILD_DESC="beyond2ltexx-user 10 QP1A.190711.020 $(PRODUCT_PDA_VERSION) release-keys"
+    PRODUCT_NAME=beyondx \
+    PRODUCT_DEVICE=beyondx \
+    PRIVATE_BUILD_DESC="beyondxxx-user 11 RP1A.200720.012 $(PRODUCT_PDA_VERSION) release-keys"
 
-BUILD_FINGERPRINT := samsung/beyond2ltexx/beyond2:10/QP1A.190711.020/$(PRODUCT_PDA_VERSION):user/release-keys
+BUILD_FINGERPRINT := samsung/beyondxxx/beyondx:11/RP1A.200720.012/$(PRODUCT_PDA_VERSION):user/release-keys
 
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
